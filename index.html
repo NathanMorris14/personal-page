@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+    <title>WelcomePagePortfolio</title>
+    <script defer src="/script.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/68e1096454.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+</head>
+<body>
+  <div class="Home-section" id="home">
+    <div class="text-bar">
+      <div><h1>Welcome</h1></div>
+      <!-- <div class="logo"></div> -->
+      <div class="home-arrows"><p><i class="home-arrow down"></i></p></div>
+      <div class="home-arrows"><p><i class="home-arrow down"></i></p></div>
+    </div>
+
+  </div>
+  
+  <div class="menu-bar" id="myDIV">
+    <button class="nav-button" onclick="goHome()">Home</button>
+    <button class="nav-button" onclick="goToProjects()">Projects</button>
+    <button class="nav-button" onclick="goToSkills()">Skills</button>
+    <button class="nav-button" onclick="goToAbout()">About</button>
+    <button class="nav-button" onclick="goToContact()">Contact</button>
+  </div>
+  
+  <div class="projects" id="projects">
+    <main class="main-content">
+        <section class="slideshow">
+          <div class="slideshow-inner">
+            <div class="slides">
+              <div class="slide is-active ">
+                
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Metric and Imperial Converter</div>
+                    <div class="text">
+                      <p>This app uses javascript to convert between common units of length, temperature, area, volume and weight.</p>
+                    </div> 
+                    <a href="https://replit.com/@nathanamorris14/Metric-Imperial-Converter-v2" class="btn">
+                      <span class="btn-inner">View Project</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-container"> 
+                  <img src="/images/2.metric-imperial-converter.png" alt="metric Imperial Conversion app Screenshot" class="image" />
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Chat Room App</div>
+                    <div class="text">
+                      <p>This is a chat room built with pug, mongodb, socket.io and javascript. It handles registration and login of users as well as the functionality to send messages to other users on the platform.</p>
+                    </div> 
+                    <a href="https://replit.com/@nathanamorris14/ChatroomApp?v=1#README.md" class="btn">
+                      <span class="btn-inner">View Project</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-container">
+                  <img src="/images/3.ChatroomScreenshot.png" alt="ChatRoom app Screenshot" class="image" />
+                </div>
+              </div>
+              
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Calculator</div>
+                    <div class="text">
+                      <p>Based on the IOS calculator, Here's a fully functional calculator that was built with react and Javascript.</p>
+                    </div> 
+                    <a href="https://js-calculator-fcc-nathanmorris.netlify.app/" class="btn">
+                      <span class="btn-inner">View Project</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-container">
+                  <img src="/images/6.Calculator.png" alt="Calculator app Screenshot" class="image" />
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">US Education Data</div>
+                    <div class="text">
+                      <p>Here's data visualization of large datasets built into a chart map of the US Education Data.</p>
+                    </div> 
+                    <a href="https://fcc-choropleth-map-v2.netlify.app/" class="btn">
+                      <span class="btn-inner">View Project</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-container"> 
+                  <img src="/images/7.us education.png" alt="US Country Edutcation dataset Display Screenshot" class="image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="pagination">
+              <div class="item is-active"> 
+                <span class="icon">1</span>
+              </div>
+              <div class="item">
+                <span class="icon">2</span>
+              </div>
+              <div class="item">
+                <span class="icon">3</span>
+              </div>
+              <div class="item">
+                <span class="icon">4</span>
+              </div>
+
+            </div>
+
+            <div class="arrows">
+              <div class="arrow prev">
+                <span class="svg svg-arrow-left">
+                  <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+              <div class="arrow next">
+                <span class="svg svg-arrow-right">
+                  <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+            </div>
+
+        </div> 
+      </section>
+    </main>
+  </div>
+
+    <div class="skills-section" id="skillspage">
+      <div class="top-buffer"></div>
+      <div class="skills-title"><h1>Skills</h1></div>
+      <div class="skills-div">
+        <p>HTML</p>
+        <div class="skills-container">
+          <div class="skills html">95%</div>
+        </div>
+        
+        <p>CSS</p>
+        <div class="skills-container">
+          <div class="skills css">90%</div>
+        </div>
+        
+        <p>JavaScript</p>
+        <div class="skills-container">
+          <div class="skills js">80%</div>
+        </div>
+        
+        <p>PHP</p>
+        <div class="skills-container">
+          <div class="skills php">75%</div>
+        </div>
+
+        <p>Python</p>
+        <div class="skills-container">
+          <div class="skills python">60%</div>
+        </div>
+
+        <p>MySQL</p>
+        <div class="skills-container">
+          <div class="skills mysqyl">50%</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="about-page" id="aboutpage">
+      <div class="top-buffer"></div>
+      <div class="about-section">
+        <div class="photo-ofme"></div>
+        <div class="aboutmetext"><p>As a self-taught web developer based in Toronto, Canada, I've honed my skills through passion, determination, and countless hours of coding. My journey began over two years when I stumbled upon an idea. Driven by entrepreneurial energy, I decided to learn coding languages to bring my vision to life. However, upon my research there was a wealth of knowledge I knew I was missing.<br><br>
+
+          Realizing that I needed a deeper understanding of software development, I enrolled in an online Computer Science class. Over time, I shifted my focus from the end result to the process of learning. Today, I thrive on creating seamless user experiences by combining front-end aesthetics with back-end functionality. Whether it's crafting responsive interfaces or optimizing database queries, I'm passionate about solving real-world problems through code.<br><br>
+          
+          My journey as a self-taught developer has taught me resilience, adaptability, and the importance of continuous learning. From building personal projects to collaborating with global teams, I embrace challenges and strive for excellence in every line of code.</p></div>
+        </div>
+        <div class="about-title">About Me</div>
+    </div>
+  
+    <div class="contact-page" id="contactpage">
+
+      <div class="contact-section">
+        <div class="contact-card">
+          <img src="/images/nathan1image.png" alt="Nathan" style="width:100%">
+          <h1>Nathan Morris</h1>
+          <p class="conctact-title">Web Developer</p>
+          <p>Toronto, Canada</p>
+          <a href="https://www.linkedin.com/in/nathan-nate-smith-morris-aab65b42/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/NathanMorris14"><i class="fa fa-github"></i></a>
+          <a href="https://codepen.io/nathanmorris11"><i class="fa fa-codepen"></i></a>
+          <a href="nathana.morris14@yhaoo.ca"><i class="fa fa-email"></i></a>
+          <p><a href="mailto:nathana.morris14@yahoo.ca"><button type="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+
+</body>
